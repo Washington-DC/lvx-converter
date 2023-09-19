@@ -22,7 +22,7 @@ struct PcdPoint
 	float x;
 	float y;
 	float z;
-	uint8_t intensity;
+	float intensity;
 };
 
 // Public Header结构体
@@ -297,9 +297,9 @@ void Convert(std::filesystem::path filepath)
 			std::string pcd_header =
 				"# .PCD v.7 - Point Cloud Data file format\n"
 				"FIELDS "
-				"x y z reflectance\n"
-				"SIZE 4 4 4 1\n"
-				"TYPE F F F U\n"
+				"x y z intensity\n"
+				"SIZE 4 4 4 4\n"
+				"TYPE F F F F\n"
 				"COUNT 1 1 1 1\n"
 				"WIDTH {}\n"
 				"HEIGHT 1\n"
