@@ -173,15 +173,7 @@ struct Datatype_8 {
 	uint8_t tag3;          /**< Tag */
 };
 
-/** IMU data format. */
-typedef struct {
-	float gyro_x;        /**< Gyroscope X axis, Unit:rad/s */
-	float gyro_y;        /**< Gyroscope Y axis, Unit:rad/s */
-	float gyro_z;        /**< Gyroscope Z axis, Unit:rad/s */
-	float acc_x;         /**< Accelerometer X axis, Unit:g */
-	float acc_y;         /**< Accelerometer Y axis, Unit:g */
-	float acc_z;         /**< Accelerometer Z axis, Unit:g */
-} LivoxImuPoint;
+
 #pragma pack(pop)  // 恢复默认的字节对齐方式
 
 
